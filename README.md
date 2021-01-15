@@ -6,7 +6,7 @@ This script will install Flarum as a Tor hidden service on a Debian 10 machine. 
 Requires Debian 10 machine to host on
 
 ### Install
-* ???
+* wget https://github.com/0x9090/DarkFlare/blob/main/setup.sh && chmod +x setup.sh && sudo ./setup.sh
 
 ### Operator Opsec
 This section will teach you how to run a DarkFlare community, and never get caught. Warning - for the ultimate security, it will cost a bit in hardware.
