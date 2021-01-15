@@ -1,6 +1,8 @@
 # DarkFlare
 Flarum, but on the Darknet
 
+!!! - This is a work in progress, do not use for real until this warning is taken down !!!
+
 This script will install Flarum as a Tor hidden service on a Debian 10 machine. Useful for quickly standing up disposable, anonymous, Flarum communites.
 
 Requires Debian 10 machine to host on
