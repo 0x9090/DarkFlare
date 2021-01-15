@@ -22,8 +22,8 @@ a suspicious item, and is at low risk of interdiction, so it's likely safe to pu
 Once you get your rPI, you'll need to install PORTAL of Pi and set it up as your laptops upstream router - https://github.com/grugq/PORTALofPi
 #### Safe Harbor
 You'll need a web hoster that will allow you pay anonymously, and that doesn't collect any personal information. Bulletproof, off-shore hosts that accept
-Monero would be prefereable. Ideally, you'll backup your Flarum data regularly to another anoymous hosting provider for redundancy.
+Monero would be prefereable. Ideally, you'll backup your Flarum data regularly to another anoymous hosting provider or at home (always via TOR) for redundancy.
 #### OpSec
 * Never log into your hosting provider, or Flarum server without going through your PORTAL of Pi
 * Never use personal information for anything. Not even email addresses.
-* 
+* When sendind data around, always prefer using TOR as the transport
