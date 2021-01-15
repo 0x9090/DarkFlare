@@ -15,7 +15,7 @@ To be truely safe, you must purchase a clean laptop and a raspberryPI. These two
 the darknet and your DarkFlare community.
 ##### Laptop
 Get cash at a random ATM for the entire ammount of the laptop you want to buy. You'll want to buy this at a Best Buy, or other electronics store.
-Park away from the store, and try to walk through an area where there will be no cameras. Cover your head, face, and eyes with a hat, sunglasses, and a mask/scarf.
+Park away from the store, and try to walk through an area where there will be no cameras. Cover your head, face, and eyes with a hat, sunglasses, and a mask/scarf. Wear non-descript clothing.
 ##### RaspberryPI
 The rPI will be used as a hardware TOR router, and will ensure any network traffic leaving your new laptop will be sent via TOR. RaspberryPIs aren't
 a suspicious item, and is at low risk of interdiction, so it's likely safe to purchase this via normal channels & methods.
