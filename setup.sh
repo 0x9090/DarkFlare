@@ -22,7 +22,6 @@ function log () {
 }
 
 function handle_exit() {
-    log "Cleaning Up"
     rm -f /tmp/${name}/mutex.lock
     rm -rf /tmp/${name}
     exit 0
@@ -98,7 +97,7 @@ service tor restart
 tar -zcvf ~/hidden_service_backup.tgz /var/lib/tor/hidden_service
 sleep 1
 tor_service_name=$(cat /var/lib/tor/hidden_service/hostname)
-log "\n------- Hidden Service Address -------\n${tor_service_name}\n"
+
 
 # --- Install & Start Nginx Proxy --- #
 apt install nginx -y
@@ -268,8 +267,11 @@ chown -R www-data:www-data /opt/flarum/public
 service php7.3-fpm restart
 
 
-
+# --- Cleanup --- #
 apt autoclean
 apt autoremove -y
 cd ${directory}
+clear
+log "\n------- Hidden Service Address -------\n${tor_service_name}\n"
+log "\nGenerated passwords for your MariaDB instance can be found in /root or your home directory.\n"
 handle_exit
