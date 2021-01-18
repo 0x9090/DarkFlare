@@ -28,4 +28,4 @@ Monero would be prefereable. Ideally, you'll backup your Flarum data regularly t
 #### OpSec
 * Never log into your hosting provider, or Flarum server without going through your PORTAL of Pi
 * Never use personal information for anything. Not even email addresses.
-* When sending data around, always prefer using TOR as the transport
+* When sending data around, always prefer using TOR as the transport. Your DarkFlare instance has a TOR socket listening on 127.0.0.1:9050
