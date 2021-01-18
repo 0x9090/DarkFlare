@@ -1,14 +1,14 @@
 # DarkFlare
 Flarum, but on the Darknet
 
-!!! - This is a work in progress, do not use for real until this warning is taken down !!!
+!!! - This project is currently in Beta: Do not use in production unless you know how to harden Debian, Flarum, and PHP !!!
 
 This script will install Flarum as a Tor hidden service on a Debian 10 machine. Useful for quickly standing up disposable, anonymous, Flarum communites.
 
 Requires Debian 10 machine to host on
 
 ### Install
-* wget https://github.com/0x9090/DarkFlare/blob/main/setup.sh && chmod +x setup.sh && sudo ./setup.sh
+wget https://github.com/0x9090/DarkFlare/blob/main/setup.sh && chmod +x setup.sh && sudo ./setup.sh
 
 ### Operator Opsec
 This section will teach you how to run a DarkFlare community, and never get caught. Warning - for the ultimate security, it will cost a bit in hardware.
@@ -24,7 +24,7 @@ a suspicious item, and is at low risk of interdiction, so it's likely safe to pu
 Once you get your rPI, you'll need to install PORTAL of Pi and set it up as your laptops upstream router - https://github.com/grugq/PORTALofPi
 #### Safe Harbor
 You'll need a web hoster that will allow you pay anonymously, and that doesn't collect any personal information. Bulletproof, off-shore hosts that accept
-Monero would be prefereable. Ideally, you'll backup your Flarum data regularly to another anoymous hosting provider or at home (always via TOR) for redundancy.
+Monero would be prefereable. Ideally, you'll backup your Flarum data regularly to another anoymous hosting provider or at home (always via TOR) for redundancy. Treat your server as disposable, and expect that it is compromised at all times. Keep the Flarum databata and TOR keys safe and backed up.
 #### OpSec
 * Never log into your hosting provider, or Flarum server without going through your PORTAL of Pi
 * Never use personal information for anything. Not even email addresses.
