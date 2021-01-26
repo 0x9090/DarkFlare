@@ -12,6 +12,7 @@ wget https://github.com/0x9090/DarkFlare/blob/main/setup.sh && chmod +x setup.sh
 
 ### Server Hardening
 ( TO DO )
+https://github.com/0x9090/DarkFlare/blob/main/harden.sh
 
 ### Operator Opsec
 This section will teach you how to run a DarkFlare community, and never get caught. Warning - for the ultimate security, it will cost a bit in hardware.
