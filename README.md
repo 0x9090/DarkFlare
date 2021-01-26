@@ -24,7 +24,7 @@ Park away from the store, and try to walk through an area where there will be no
 The rPI will be used as a hardware TOR router, and will ensure any network traffic leaving your new laptop will be sent via TOR. RaspberryPIs aren't
 a suspicious item, and is at low risk of interdiction, so it's likely safe to purchase this via normal channels & methods.
 Once you get your rPI, you'll need to install PORTAL of Pi and set it up as your laptops upstream router - https://github.com/grugq/PORTALofPi
-#### Safe Harbor
+#### Server / VPS
 You'll need a web hoster that will allow you pay anonymously, and that doesn't collect any personal information. Bulletproof, off-shore hosts that accept
 Monero would be prefereable. Ideally, you'll backup your Flarum data regularly to another anoymous hosting provider or at home (always via TOR) for redundancy. Treat your server as disposable, and expect that it is compromised at all times. Operating this way means you won't have to care about PHP, or Flarum, or Nginx, or Linux, or ... from being hacked. Keep the Flarum database and TOR keys backed up, and you'll be fine.
 #### OpSec
