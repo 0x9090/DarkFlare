@@ -10,11 +10,13 @@ Requires Debian 10 machine to host on
 ### Install
 wget https://github.com/0x9090/DarkFlare/blob/main/setup.sh && chmod +x setup.sh && sudo ./setup.sh
 
+### Server Hardening
+( TO DO )
+
 ### Operator Opsec
 This section will teach you how to run a DarkFlare community, and never get caught. Warning - for the ultimate security, it will cost a bit in hardware.
 #### Safe Hardware
-To be truely safe, you must purchase a clean laptop and a raspberryPI. These two devices are the fundamental building blocks through which you will interact with
-the darknet and your DarkFlare community.
+To be truely safe, you must purchase a clean laptop and a raspberryPI. These two devices are the fundamental building blocks through which you will interact with the darknet and your DarkFlare community.
 ##### Laptop
 Get cash at a random ATM for the entire ammount of the laptop you want to buy. You'll want to buy this at a Best Buy, or other electronics store.
 Park away from the store, and try to walk through an area where there will be no cameras. Cover your head, face, and eyes with a hat, sunglasses, and a mask/scarf. Wear non-descript clothing.
