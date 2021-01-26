@@ -274,4 +274,6 @@ cd ${directory}
 clear
 log "\n------- Hidden Service Address -------\n${tor_service_name}\n"
 log "\nGenerated passwords for your MariaDB instance can be found in /root or your home directory.\n"
+log "Your TOR keys are also backed up in /root or your home directory.\n"
+log "Be sure to disable email inside of Flarum, prior to opening it to the public.\n"
 handle_exit
