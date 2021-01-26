@@ -14,6 +14,8 @@ wget https://github.com/0x9090/DarkFlare/blob/main/setup.sh && chmod +x setup.sh
 ( TO DO )
 https://github.com/0x9090/DarkFlare/blob/main/harden.sh
 
+This server hardening scripts assumes that the setup.sh has already been successfully run, and Flarum is working properly.
+
 ### Operator Opsec
 This section will teach you how to run a DarkFlare community, and never get caught. Warning - for the ultimate security, it will cost a bit in hardware.
 #### Safe Hardware
