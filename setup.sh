@@ -65,14 +65,11 @@ apt upgrade -y
 apt install unattended-upgrades apt-transport-https apt-transport-tor gpg expect sudo -y
 
 cat > /etc/apt/sources.list.d/tor.list<< EOF
-deb     https://deb.torproject.org/torproject.org $(lsb_release -cs) main
-deb-src https://deb.torproject.org/torproject.org $(lsb_release -cs) main
+deb     tor+https://deb.torproject.org/torproject.org $(lsb_release -cs) main
+deb-src tor+https://deb.torproject.org/torproject.org $(lsb_release -cs) main
 EOF
-wget -qO- https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc | gpg --import
+wget -qO- https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc -e use_proxy=yes -e http_proxy=127.0.0.1:9050 | gpg --import
 gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | apt-key add -
-
-#curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
-#add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable"
 
 apt update
 apt install tor deb.torproject.org-keyring ca-certificates gnupg-agent software-properties-common -y
@@ -135,7 +132,7 @@ if ! pgrep -x mariadbd &> /dev/null 2>&1; then
     mkdir -p /tmp/${name}/wget
     wget https://mariadb.org/mariadb_release_signing_key.asc -e use_proxy=yes -e http_proxy=127.0.0.1:9050 -P /tmp/${name}/wget/
     apt-key add /tmp/${name}/wget/mariadb_release_signing_key.asc
-    add-apt-repository "deb [arch=amd64] http://nyc2.mirrors.digitalocean.com/mariadb/repo/10.5/debian $(lsb_release -cs) main"
+    add-apt-repository "deb [arch=amd64] tor+http://nyc2.mirrors.digitalocean.com/mariadb/repo/10.5/debian $(lsb_release -cs) main"
     apt update
     apt install mariadb-server mariadb-client -y
     if [ ! -f ~/mariadb_root_pw ]; then
