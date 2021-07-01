@@ -138,7 +138,7 @@ if ! pgrep -x mariadbd &> /dev/null 2>&1; then
     if [ ! -f ~/mariadb_root_pw ]; then
         pass=$(cat /dev/urandom | tr -dc A-Za-z0-9 | head -c14; echo)
         echo ${pass} >> ~/mariadb_root_pw
-        mysql --user=root --password="${pass}" -e "SET PASSWORD FOR root@localhost = PASSWORD('${pass})');"
+        mysql --user=root --password="${pass}" -e "SET PASSWORD FOR root@localhost = PASSWORD('${pass}');"
     else
         pass=$(cat ~/mariadb_root_pw)
     fi
