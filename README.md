@@ -34,5 +34,6 @@ Monero would be prefereable. Ideally, you'll backup your Flarum data regularly t
 * Never log into your hosting provider, or Flarum server without going through your PORTAL of Pi
 * Never use personal information for anything. Not even email addresses.
 * Pay for things only using Monero.
+* De-solder the wifi/bluetooth/GPS, camera and microphone from your laptop and only hardware ethernet into your rPi (or buy a mini-PC that has none of these features)
 * When sending data around, always prefer using TOR as the transport. Your DarkFlare instance has a TOR HTTP socket listening on 127.0.0.1:9050
 * Don't talk about yourself at all. Not even what the weather is like outside.
