@@ -36,6 +36,6 @@ Monero would be prefereable. Ideally, you'll backup your Flarum data regularly t
 * Pay for things only using Monero.
 * De-solder the wifi/bluetooth/GPS, camera and microphone from your laptop and only hardware ethernet into your rPi (or buy a mini-PC that has none of these features)
 * When sending data around, always prefer using TOR as the transport. Your DarkFlare instance has a TOR HTTP socket listening on 127.0.0.1:9050
-** wget google.com -e use_proxy=yes -e http_proxy=127.0.0.1:9050
-** sftp -o "ProxyCommand connect -H 127.0.0.1:9050 %h %p" user@sftp.ABCD.com
+  * wget google.com -e use_proxy=yes -e http_proxy=127.0.0.1:9050
+  * sftp -o "ProxyCommand connect -H 127.0.0.1:9050 %h %p" user@sftp.ABCD.com
 * Don't talk about yourself at all. Not even what the weather is like outside.
